@@ -1,0 +1,41 @@
+# ===== Secrets / env =====
+.env
+.env.local
+*.env
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ===== SQLite dev database (demo fallback) =====
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== ML model artifacts =====
+*.pkl
+*.joblib
+
+# ===== Node / Frontend =====
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# ===== Editor / OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+npm-debug.log*
