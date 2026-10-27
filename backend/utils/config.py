@@ -1,4 +1,4 @@
-"""Application configuration loaded from environment variables.
+﻿"""Application configuration loaded from environment variables.
 
 Settings are read from a `.env` file (python-dotenv via pydantic-settings)
 or from real environment variables. A safe default is used for the database
@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 60 * 24 * 7  # 7 days
 
     # CORS
-    frontend_origins: str = "http://localhost:5173,http://localhost:5174,http://127.0.0.1:5173,http://127.0.0.1:5174"
+    frontend_origins: str = "https://career-guidance-frontend-delta.vercel.app,http://localhost:5173,http://localhost:5174,http://127.0.0.1:5173,http://127.0.0.1:5174"
 
     # App
     app_name: str = "AI Career Guidance API"
@@ -44,3 +44,4 @@ def get_settings() -> Settings:
 
 
 settings = get_settings()
+
